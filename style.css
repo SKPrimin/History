@@ -1,81 +1,59 @@
-.container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.preloader{
-    animation: rotate 2.3s cubic-bezier(0.75,0,0.5,1) infinite;
-}
-@keyframes rotate{
-    50%{
-        transform: rotate(360deg);
-    }
-    100%{
-        transform: rotate(720deg);
-    }
+body
+{
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/8offical2.jpg);	/* 背景图片 */
+	background-repeat: no-repeat;	/* 背景图片不重复 */
 }
 
-.preloader span{
-    height: 64px;
-    width: 64px;
-    display: block;
-    position: absolute;
-    background: rgb(88, 171, 219);
-    border: 1px solid rgb(88, 171, 219);
-    border-radius: 100%;
+#bigBox
+{
+	margin: 0 auto;	/* login框剧中 */
+	margin-top: 0px; /* login框与顶部的距离 */
+	padding: 20px 50px;	/* login框内部的距离(内部与输入框和按钮的距离) */
+	background-color: #00000090;	/* login框背景颜色和透明度 */
+	width: 400px;
+	height: 300px;
+	border-radius: 10px;	/* 圆角边 */
+	text-align: center;	/* 框内所有内容剧中 */
 }
 
-.preloader span:nth-child(1){
-    transform: translate(-28px,-28px);
-    animation: shape_1 2.3s cubic-bezier(0.75,0,0.5,1) infinite;
-}
-@keyframes shape_1{
-    60%{
-        transform: scale(0.4);
-    }
+#bigBox h1
+{
+	color: pink;	/* LOGIN字体颜色 */
 }
 
-.preloader span:nth-child(2){
-    transform: translate(28px,-28px);
-    animation: shape_2 2.3s cubic-bezier(0.75,0,0.5,1) infinite;
+#bigBox .inputBox
+{
+	margin-top: 50px;	/* 输入框顶部与LOGIN标题的间距 */
 }
-@keyframes shape_2{
-    40%{
-        transform: scale(0.4);
-    }
+
+#bigBox .inputBox .inputText
+{
+	margin-top: 20px;	/* 输入框之间的距离 */
 }
-.preloader span:nth-child(3){
-    position: relative;
-    /*background: red;
-    border-color: red;*/
-    border-radius: 0px;
-    transform: scale(0.98) rotate(-45deg);
-    animation: shape_3 2.3s cubic-bezier(0.75,0,0.5,1) infinite;
+
+#bigBox .inputBox .inputText span
+{
+	color: white;	/* icon颜色 */
 }
-@keyframes shape_3{
-    50%{
-        border-radius: 100%;
-        transform: scale(0.5) rotate(-45deg);
-    }
-    100%{
-        transform: scale(0.98) rotate(-45deg);
-    }
+
+#bigBox .inputBox .inputText input
+{
+	border: 0;	/* 删除输入框边框 */
+	padding: 10px 10px;	/* 输入框内的间距 */
+	border-bottom: 1px solid white;	/* 输入框白色下划线 */
+	background-color: #00000000;	/* 输入框透明 */
+	color: white;	/* 输入字体的颜色 */
 }
-.container .shadow{
-    position: relative;
-    display: block;
-    height: 16px;
-    width: 64px;
-    background: #d9d9d9;
-    border: 1px solid #d9d9d9;
-    border-radius: 50%;
-    top: 30px;
-    animation: shadow 2.3s cubic-bezier(0.75,0,0.5,1) infinite;
-}
-@keyframes shadow{
-    50%{
-        background-color: #f2f2f2;
-        transform: scale(0.5);
-    }
+
+#bigBox .loginButton
+{
+	margin-top: 30px;	/* 按钮顶部与输入框的距离 */
+	width: 150px;
+	height: 25px;
+	color: white;	/* 按钮字体颜色 */
+	border: 0; /* 删除按钮边框 */
+	border-radius: 20px;	/* 按钮圆角边 */
+	background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);	/* 按钮颜色 */
 }
