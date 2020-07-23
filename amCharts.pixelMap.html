@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>map created with amCharts | amCharts</title>
+		<meta name="description" content="map created using amCharts pixel map generator" />
+
+		<!--
+			This map was created using Pixel Map Generator by amCharts and is licensed under the Creative Commons Attribution 4.0 International License.
+			You may use this map the way you see fit as long as proper attribution to the name of amCharts is given in the form of link to https://pixelmap.amcharts.com/
+			To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+
+			If you would like to use this map without any attribution, you can acquire a commercial license for the JavaScript Maps - a tool that was used to produce this map.
+			To do so, visit amCharts Online Store: https://www.amcharts.com/online-store/
+		-->
+
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/ammap.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/maps/js/chinaLow.js"></script>
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("map",{
+					"type": "map",
+					"pathToImages": "http://www.amcharts.com/lib/3/images/",
+					"addClassNames": true,
+					"fontSize": 15,
+					"color": "#000000",
+					"projection": "mercator",
+					"backgroundAlpha": 1,
+					"backgroundColor": "rgba(204,204,213,1)",
+					"dataProvider": {
+						"map": "chinaLow",
+						"getAreasFromMap": true,
+						"images": [
+							{
+								"top": 40,
+								"left": 60,
+								"width": 80,
+								"height": 40,
+								"pixelMapperLogo": true,
+								"imageURL": "http://pixelmap.amcharts.com/static/img/logo-black.svg",
+								"url": "http://www.amcharts.com"
+							}
+						],
+						"areas": [
+							{
+								"id": "CN-34",
+								"title": "<h2>安徽 28<h3>池州--孙远阳</h3><h3>滁州--张光</h3><h3>黄山--张路遥</h3><h3>安庆--王智慧</h3><h3>阜阳--修峰 范家合</h3><h3>淮南--赵加强 柴向宇</h3><h3>马鞍山--李亚鹏 唐成宇</h3><h3>淮北-3-修亚飞 李子旋 王欢乐</h3><h3>蚌埠-4-吕婷站 周群 李政 李申奥</h3><h3>合肥-11-张丞 魏凯祥 刘继尧 孟增峰 李翔 孟倩 张孟凯 吴昊 董梦龙 唐蔓蔓 薛露</h3></h2>",
+								
+								"color": "rgba(225,77,107,0.8)"
+							},
+							{
+								"id": "CN-11",
+								"title": "<h2>北京-1-葛坤鹏</h2>",
+								"color": "rgba(216,213,75,0.8)"
+							},
+							{
+								"id": "CN-44",
+								"title": "<h2>广东 2<h3>广州--张文焕</h3><h3>湛江--孙权威</h3></h2>",
+								"color": "rgba(75,173,216,0.8)"
+							},
+							{
+								"id": "CN-41",
+								"title": "<h2>河南 1<h3>洛阳--韩业创</h3></h2>",
+								"color": "rgba(232,221,57,0.8)"
+							},
+							{
+								"id": "CN-23",
+								"title": "<h2>黑龙江 1<h3>哈尔滨--宋子康</h3></h2>",
+								
+								"color": "rgba(75,216,150,0.8)"
+							},
+							{
+								"id": "CN-42",
+								"title": "<h2>湖北 1<h3>武汉--石海天</h3></h2>",
+								"color": "rgba(75,216,98,0.8)"
+							},
+							{
+								"id": "CN-22",
+								"title": "<h2>吉林 1<h3>长春--张涛</h3></h2>",
+								"color": "rgba(144,75,216,0.8)"
+							},
+							{
+								"id": "CN-32",
+								"title": "<h2>江苏 4<h3>徐州 3<h4>吴宇祥 汤梦琦 王永康</h4></h3><h3>南京--郭竞曦</h3></h2>",
+								"color": "rgba(216,133,75,0.8)"
+							},
+							{
+								"id": "CN-21",
+								"title": "<h2>辽宁 2<h3>大连-2-郭豪 李浩楠</h3></h2>",
+								"color": "rgba(216,98,75,0.8)"
+							},
+							{
+								"id": "CN-51",
+								"title": "<h2>四川 1<h3>绵阳--吴昆仑</h3></h2>",
+								"color": "rgba(75,127,216,0.8)"
+							},
+							{
+								"id": "CN-31",
+								"title": "<h2>上海-2-李贺峰 刘乐乐</h2>",
+								"color": "rgba(75,138,216,0.8)"
+							},
+							{
+								"id": "CN-12",
+								"title": "<h2>天津-1-徐行行</h2>",
+								"color": "rgba(110,216,75,0.8)"
+							},
+							{
+								"id": "CN-33",
+								"title": "<h2>浙江 2<h3>杭州-2-王思远 靳洋洋</h3></h2>",
+								"color": "rgba(144,75,216,0.8)"
+							}
+						]
+					},
+					"balloon": {
+						"horizontalPadding": 15,
+						"borderAlpha": 0,
+						"borderThickness": 1,
+						"verticalPadding": 15
+					},
+					"areasSettings": {
+						"color": "rgba(129,129,129,1)",
+						"outlineColor": "rgba(204,204,213,1)",
+						"rollOverOutlineColor": "rgba(204,204,213,1)",
+						"rollOverBrightness": 20,
+						"selectedBrightness": 20,
+						"selectable": true,
+						"unlistedAreasAlpha": 0,
+						"unlistedAreasOutlineAlpha": 0
+					},
+					"imagesSettings": {
+						"alpha": 1,
+						"color": "rgba(129,129,129,1)",
+						"outlineAlpha": 0,
+						"rollOverOutlineAlpha": 0,
+						"outlineColor": "rgba(204,204,213,1)",
+						"rollOverBrightness": 20,
+						"selectedBrightness": 20,
+						"selectable": true
+					},
+					"linesSettings": {
+						"color": "rgba(129,129,129,1)",
+						"selectable": true,
+						"rollOverBrightness": 20,
+						"selectedBrightness": 20
+					},
+					"zoomControl": {
+						"zoomControlEnabled": true,
+						"homeButtonEnabled": false,
+						"panControlEnabled": false,
+						"right": 38,
+						"bottom": 30,
+						"minZoomLevel": 0.25,
+						"gridHeight": 100,
+						"gridAlpha": 0.1,
+						"gridBackgroundAlpha": 0,
+						"gridColor": "#FFFFFF",
+						"draggerAlpha": 1,
+						"buttonCornerRadius": 2
+					}
+				});
+		</script>
+	</head>
+	<body style="margin: 0;background-color: rgba(204,204,213,1);">
+		<div id="map" style="width: 100%; height: 889px;"></div>
+	</body>
+</html>
